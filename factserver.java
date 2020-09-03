@@ -12,10 +12,12 @@ public class factserver {
         DataInputStream dis = new DataInputStream(s.getInputStream());
         DataOutputStream dos = new DataOutputStream(s.getOutputStream());
         String inp = dis.readUTF();
-        int n = Integer.parseInt(inp);
-        System.out.println("Client sent "+n);
-        fact ob=new fact();
-        int f=ob.calfact(n);
+        // int n = Integer.parseInt(inp);
+        System.out.println("Client sent " + inp);
+        // fact ob = new fact();
+        palindrome pa = new palindrome();
+        // int f=ob.calfact(n);
+        boolean f = pa.checkPalindrome(inp);
         dos.writeUTF(String.valueOf(f));
         dos.flush();
         dis.close();

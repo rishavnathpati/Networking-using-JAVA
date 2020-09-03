@@ -10,9 +10,9 @@ public class factclient {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         DataOutputStream dos = new DataOutputStream(s.getOutputStream());
         DataInputStream dis = new DataInputStream(s.getInputStream());
-        System.out.println("Enter a number");
-        int n = Integer.parseInt(br.readLine());
-        dos.writeUTF(String.valueOf(n));
+        System.out.println("Enter a String");
+        String str = br.readLine();
+        dos.writeUTF(String.valueOf(str));
         dos.flush();
         String output = dis.readUTF();
         System.out.println("Factorial is : " + output);
