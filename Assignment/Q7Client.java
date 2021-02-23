@@ -1,23 +1,21 @@
-import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
-import java.io.*;
+import java.util.Scanner;
 
-public class ClientTxt {
+public class Q7Client {
     public static void main(String[] args) throws UnknownHostException, IOException {
         Socket s = new Socket("127.0.0.1", 11111);
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        Scanner sc = new Scanner(System.in);
         DataOutputStream dos = new DataOutputStream(s.getOutputStream());
         DataInputStream dis = new DataInputStream(s.getInputStream());
-        System.out.println("Enter a the file name: ");
-        String str = br.readLine();
-        dos.writeUTF(String.valueOf(str));
-        dos.flush();
-        String output = dis.readUTF();
-        System.out.println("Content of file is : " + output);
+        System.out.println(dis.readUTF());
+        System.out.println(dis.readUTF());
         dos.close();
         dis.close();
         s.close();
+        sc.close();
     }
 }

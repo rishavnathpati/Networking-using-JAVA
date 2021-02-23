@@ -1,6 +1,5 @@
 import java.io.*;
 import java.net.*;
-
 class server1 {
     public static void main(final String[] args) throws IOException {
         final ServerSocket ss = new ServerSocket(12000);

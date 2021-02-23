@@ -1,4 +1,4 @@
-public class palindrome {
+public class Q4palindrome {
     boolean checkPalindrome(String str) {
         int i = 0, j = str.length() - 1;
         while (i < j) {

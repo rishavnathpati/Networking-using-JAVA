@@ -1,0 +1,10 @@
+Network Programming
+1.	Write a java networking program to find the Host name and Host address by given a domain name.
+2.	Write a java networking program to find protocol, host name, port number and file name of a given URL.
+3.	Write a socket program to implement simple calculator.
+4.	Write a socket program to check whether a string is palindrome or not.
+5.	Write a socket program to implement simple chat between client and server.
+6.	Write a socket program to transfer a file from server to client.
+7.  Write a socket program to receive client IP address from server and send current date and time using TCP.
+8.	Write a socket program to send some messages to server until client type bye using UDP.
+9.	Write a program for concurrent communication of client to the server using TCP Socket.
