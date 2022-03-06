@@ -32,6 +32,7 @@ public class Server {
 
             } catch (Exception e) {
                 s.close();
+                ss.close();
                 e.printStackTrace();
             }
         }
