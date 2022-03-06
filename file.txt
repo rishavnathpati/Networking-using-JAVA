@@ -1,2 +1,0 @@
-Test file for reading from server.
-And showing to client side. 
